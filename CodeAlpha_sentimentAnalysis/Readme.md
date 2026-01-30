@@ -56,14 +56,13 @@ Click "Analyze Sentiment"
 
 View results instantly
 📊 Output Examples
-Web Interface Output:
-interface.png
-a.png
-b.png
-c.png
-d.png
-e.png
-f.png
+Web Interface Output:(interface.png)
+(a.png)
+(b.png)
+(c.png)
+(d.png)
+(e.png)
+(f.png)
 📈 Use Cases
 For Businesses:
 Customer Feedback Analysis: Analyze product reviews
@@ -119,5 +118,6 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
 
