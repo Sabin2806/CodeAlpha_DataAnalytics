@@ -78,7 +78,7 @@ cd titanic_eda_project
 pip install -r requirements.txt
 📈 Visualizations Gallery
 Chart	Description
-CodeAlpha_DataAnalytics/tree/main/CodeAlpha_EDA/images/01_survival_distribution.png	Overall survival rate and distribution
+images/01_survival_distribution.png	Overall survival rate and distribution
 images/02_age_distribution.png	Passenger age distribution with statistics
 images/03_fare_distribution.png	Ticket fare distribution
 images/04_survival_by_gender.png	Survival comparison by gender
@@ -299,4 +299,5 @@ Thumbs.db
 # !images/09_*.png
 
 # !images/10_*.png
+
 
