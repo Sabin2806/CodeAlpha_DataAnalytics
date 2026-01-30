@@ -57,7 +57,7 @@ Click "Analyze Sentiment"
 View results instantly
 📊 Output Examples
 Web Interface Output:
-interface-preview.png
+interface.png
 a.png
 b.png
 c.png
@@ -119,4 +119,5 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
