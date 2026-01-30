@@ -78,16 +78,16 @@ cd titanic_eda_project
 pip install -r requirements.txt
 📈 Visualizations Gallery
 Chart	Description
-https://./images/01_survival_distribution.png	Overall survival rate and distribution
-https://./images/02_age_distribution.png	Passenger age distribution with statistics
-https://./images/03_fare_distribution.png	Ticket fare distribution
-https://./images/04_survival_by_gender.png	Survival comparison by gender
-https://./images/05_survival_by_class.png	Survival comparison by passenger class
-https://./images/06_correlation_heatmap.png	Correlation between numerical features
-https://./images/07_age_vs_survival.png	Age distribution by survival status
-https://./images/08_fare_vs_survival.png	Fare distribution by survival status
-https://./images/09_gender_distribution.png	Gender distribution of passengers
-https://./images/10_class_distribution.png	Passenger class distribution
+images/01_survival_distribution.png	Overall survival rate and distribution
+images/02_age_distribution.png	Passenger age distribution with statistics
+images/03_fare_distribution.png	Ticket fare distribution
+images/04_survival_by_gender.png	Survival comparison by gender
+images/05_survival_by_class.png	Survival comparison by passenger class
+images/06_correlation_heatmap.png	Correlation between numerical features
+images/07_age_vs_survival.png	Age distribution by survival status
+images/08_fare_vs_survival.png	Fare distribution by survival status
+images/09_gender_distribution.png	Gender distribution of passengers
+images/10_class_distribution.png	Passenger class distribution
 📋 Analysis Workflow
 Data Loading & Inspection
 
@@ -297,4 +297,5 @@ Thumbs.db
 # !images/07_*.png
 # !images/08_*.png
 # !images/09_*.png
+
 # !images/10_*.png
