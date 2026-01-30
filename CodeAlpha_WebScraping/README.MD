@@ -29,11 +29,15 @@ A simple, educational web scraping project that demonstrates how to extract data
 ├── 📓 scraping_project.ipynb # Jupyter notebook (interactive)
 ├── 🐍 scraper.py # Main Python script
 ├── ⚙️ config.py # Configuration settings (optional)
-├── 📊 books_data.csv # Sample output (generated)
+├── 📊 scraped_books.csv # Sample output (generated)
 
 📊 Output
-    
-    ![](sampledata.png)
+The scraper generates a CSV file with the following columns:
+Column	Description	Example
+title	Book title	"A Light in the Attic"
+price	Book price	"£51.77"
+availability	Stock status	"In stock"
+rating	Star rating	"Three"
 
 🤝 Contributing
 Contributions are welcome! Here's how you can help:
@@ -75,5 +79,6 @@ Respect copyright and data ownership
 The example uses books.toscrape.com which is specifically for practice
 
 Happy Scraping! 🕷️✨
+
 
 If you find this project helpful, please give it a ⭐ on GitHub!
