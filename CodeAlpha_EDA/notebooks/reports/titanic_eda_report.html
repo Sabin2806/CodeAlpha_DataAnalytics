@@ -1,0 +1,332 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titanic EDA Report</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            .container {
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+            .header {
+                text-align: center;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 30px;
+                border-radius: 10px 10px 0 0;
+                margin-bottom: 30px;
+            }
+            .header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+            .header p {
+                margin: 10px 0 0;
+                opacity: 0.9;
+            }
+            .section {
+                margin-bottom: 40px;
+                padding: 20px;
+                background: white;
+                border-left: 4px solid #667eea;
+                border-radius: 5px;
+            }
+            .section-title {
+                color: #667eea;
+                border-bottom: 2px solid #f0f0f0;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            .insight-card {
+                background: #f8f9fa;
+                border-left: 4px solid #28a745;
+                padding: 15px;
+                margin: 10px 0;
+                border-radius: 5px;
+            }
+            .metric-card {
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                margin: 10px;
+                flex: 1;
+                min-width: 200px;
+            }
+            .metrics-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            .plot-container {
+                text-align: center;
+                margin: 20px 0;
+                padding: 20px;
+                background: #f8f9fa;
+                border-radius: 10px;
+            }
+            .plot-container img {
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #667eea;
+                color: white;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            .recommendation {
+                background: #e3f2fd;
+                border-left: 4px solid #2196f3;
+                padding: 15px;
+                margin: 10px 0;
+                border-radius: 5px;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #ddd;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🚢 Titanic Dataset - Exploratory Data Analysis Report</h1>
+                <p>Generated on January 29, 2026</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📋 Executive Summary</h2>
+                <p>This report provides a comprehensive analysis of the Titanic passenger dataset, 
+                examining factors that influenced survival rates during the disaster. The analysis 
+                includes data cleaning, visualization, and statistical insights.</p>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3>Total Passengers</h3>
+                        <p style="font-size: 2em; margin: 10px 0;">712</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Survival Rate</h3>
+                        <p style="font-size: 2em; margin: 10px 0;">40.4%</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Average Age</h3>
+                        <p style="font-size: 2em; margin: 10px 0;">29.6</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Average Fare</h3>
+                        <p style="font-size: 2em; margin: 10px 0;">$34.57</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📊 Dataset Overview</h2>
+                <p><strong>Dataset:</strong> Titanic Passenger List</p>
+                <p><strong>Source:</strong> Seaborn Built-in Dataset</p>
+                <p><strong>Time Period:</strong> 1912</p>
+                <p><strong>Columns Analyzed:</strong> 15 variables</p>
+
+                <h3>Data Dictionary:</h3>
+                <table>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>survived</td>
+                        <td>Survival (0 = No, 1 = Yes)</td>
+                        <td>Binary</td>
+                    </tr>
+                    <tr>
+                        <td>pclass</td>
+                        <td>Passenger class (1st, 2nd, 3rd)</td>
+                        <td>Ordinal</td>
+                    </tr>
+                    <tr>
+                        <td>sex</td>
+                        <td>Passenger gender</td>
+                        <td>Categorical</td>
+                    </tr>
+                    <tr>
+                        <td>age</td>
+                        <td>Passenger age in years</td>
+                        <td>Continuous</td>
+                    </tr>
+                    <tr>
+                        <td>fare</td>
+                        <td>Passenger fare</td>
+                        <td>Continuous</td>
+                    </tr>
+                    <tr>
+                        <td>embarked</td>
+                        <td>Port of Embarkation</td>
+                        <td>Categorical</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🔍 Key Findings</h2>
+
+                <h3>Survival Distribution:</h3>
+                <div class="plot-container">
+                    <img src="D:/CODE_ALPHA/CodeAlpha_Projects/CodeAlpha_EDA/notebooks/images/survival_distribution.png" alt="Survival Distribution">
+                </div>
+
+                <h3>Survival by Gender:</h3>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <th>Survival Rate</th>
+                        <th>Count</th>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>75.3%</td>
+                        <td>259</td>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>20.5%</td>
+                        <td>453</td>
+                    </tr>
+                </table>
+
+                <h3>Survival by Passenger Class:</h3>
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th>Survival Rate</th>
+                        <th>Count</th>
+                    </tr>
+    
+                    <tr>
+                        <td>First</td>
+                        <td>65.2%</td>
+                        <td>184</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Second</td>
+                        <td>48.0%</td>
+                        <td>173</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Third</td>
+                        <td>23.9%</td>
+                        <td>355</td>
+                    </tr>
+        
+                </table>
+
+                <h3>Top 5 Insights:</h3>
+    <div class="insight-card">1. **Overall Survival Rate**: Only 38.4% of passengers survived</div><div class="insight-card">2. **Gender Impact**: Females had much higher survival rate (74.2%) than males (18.9%)</div><div class="insight-card">3. **Class Mattered**: 1st class passengers had 63.0% survival vs 24.2% for 3rd class</div><div class="insight-card">4. **Age Factor**: Children (0-12) had better survival chances than adults</div><div class="insight-card">5. **Fare Correlation**: Higher fare-paying passengers had better survival rates</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📈 Correlation Analysis</h2>
+                <div class="plot-container">
+                    <img src="D:/CODE_ALPHA/CodeAlpha_Projects/CodeAlpha_EDA/notebooks/images/correlation_heatmap.png" alt="Correlation_Heatmap">
+                </div>
+
+                <h3>Key Correlations:</h3>
+                <ul>
+                    <li><strong>Fare vs Class:</strong> Higher fare correlates with better passenger class</li>
+                    <li><strong>Survival vs Fare:</strong> Positive correlation (0.26) - higher fare passengers more likely to survive</li>
+                    <li><strong>Class vs Survival:</strong> Negative correlation (-0.34) - lower class numbers (1st class) had better survival</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📋 Data Quality Assessment</h2>
+                <p><strong>Data Cleaning Performed:</strong></p>
+                <ul>
+                    <li>Missing age values filled with median: 177 values</li>
+                    <li>Missing embarked values filled with mode: 2 values</li>
+                    <li>Deck column removed (high percentage of missing values)</li>
+                    <li>Final dataset: 712 rows × 15 columns</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">💡 Recommendations</h2>
+
+                <div class="recommendation">
+                    <h4>1. Priority Evacuation Protocols</h4>
+                    <p>Based on the "women and children first" pattern observed, establish clear evacuation protocols prioritizing vulnerable groups.</p>
+                </div>
+
+                <div class="recommendation">
+                    <h4>2. Class Equity in Safety Measures</h4>
+                    <p>Address the disparity in survival rates between passenger classes by ensuring equal access to lifeboats and safety equipment.</p>
+                </div>
+
+                <div class="recommendation">
+                    <h4>3. Age-Specific Safety Training</h4>
+                    <p>Implement age-specific safety briefings and evacuation procedures, with special attention to children and elderly passengers.</p>
+                </div>
+
+                <div class="recommendation">
+                    <h4>4. Fare Transparency</h4>
+                    <p>Ensure that safety measures are not correlated with ticket price to prevent discrimination in emergency situations.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎯 Conclusion</h2>
+                <p>The analysis of the Titanic disaster reveals significant demographic patterns in survival outcomes. 
+                Gender was the strongest predictor of survival, followed by passenger class and age. 
+                These findings highlight the importance of equitable safety measures in maritime travel.</p>
+
+                <p><strong>Key Takeaways:</strong></p>
+                <ul>
+                    <li>Female passengers were 4 times more likely to survive than male passengers</li>
+                    <li>1st class passengers had survival rates 2.6 times higher than 3rd class passengers</li>
+                    <li>Children under 12 had better survival chances than adults</li>
+                    <li>Economic status (as indicated by fare and class) significantly impacted survival</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p>Report generated using Python, Pandas, and Matplotlib</p>
+                <p>Data Source: Seaborn Titanic Dataset</p>
+                <p>© 2026 Titanic EDA Project</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
