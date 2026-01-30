@@ -57,13 +57,16 @@ Click "Analyze Sentiment"
 
 View results instantly
 📊 Output Examples
-![Interface Preview](interface.png)
-![](a.png)
-![](b.png)
-![](c.png)
-![](d.png)
-![](e.png)
-![](f.png)
+![Interface Preview](imaages/interface.png)
+![](images/a.png)
+![](images/b.png)
+![](images/c.png)
+![](images/d.png)
+![](images/e.png)
+![](images/f.png)
+
+Report pdf : 
+![report](sample report.pdf)
 📈 Use Cases
 For Businesses:
 Customer Feedback Analysis: Analyze product reviews
@@ -119,6 +122,7 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
 
 
