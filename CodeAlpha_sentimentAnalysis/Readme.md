@@ -1,4 +1,5 @@
 📊 Sentiment Analysis Web Application
+
 📌 Project Overview
 A user-friendly web application that analyzes text sentiment and emotions from various sources like social media, reviews, and news articles. The application classifies text as Positive, Negative, or Neutral and detects specific emotions.
 
@@ -118,6 +119,7 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
 
 
