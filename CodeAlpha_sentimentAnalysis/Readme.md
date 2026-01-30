@@ -1,8 +1,11 @@
-📊 Sentiment Analysis Web Application
+                                                     📊 Sentiment Analysis Web Application
+
 📌 Project Overview
+
 A user-friendly web application that analyzes text sentiment and emotions from various sources like social media, reviews, and news articles. The application classifies text as Positive, Negative, or Neutral and detects specific emotions.
 
 🎯 Features
+
 Real-time Sentiment Analysis: Instant classification of text
 
 Emotion Detection: Identifies emotions like Happy, Sad, Angry, Fearful
@@ -45,7 +48,9 @@ Run the Application
 python app.py
 🌐 Open your browser and visit:
 http://localhost:5000
+
 📋 How to Use
+
 1. Basic Analysis
 Go to http://localhost:5000
 
@@ -56,16 +61,19 @@ Paste your text in the textbox
 Click "Analyze Sentiment"
 
 View results instantly
+
 📊 Output Examples
-Web Interface Output:
-interface-preview.png
-a.png
-b.png
-c.png
-d.png
-e.png
-f.png
+Web Interface Outputs:
+![](images/interface.png)
+![](images/a.png)
+![](images/b.png)
+![](images/c.png)
+![](images/d.png)
+![](images/e.png)
+![](images/f.png)
+
 📈 Use Cases
+
 For Businesses:
 Customer Feedback Analysis: Analyze product reviews
 
@@ -120,4 +128,5 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
