@@ -57,7 +57,7 @@ Click "Analyze Sentiment"
 View results instantly
 📊 Output Examples
 Web Interface Output:
-static/images/interface-preview.png
+CodeAlpha_sentimentAnalysis/static/images/interface-preview.png
 static/images/a.png
 static/images/b.png
 static/images/c.png
@@ -119,4 +119,5 @@ Review console output for errors
 Ensure all dependencies are installed
 
 Verify notebook file structure
+
 
