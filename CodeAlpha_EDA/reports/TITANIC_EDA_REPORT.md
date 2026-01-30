@@ -43,34 +43,34 @@
 ## 📈 Key Visualizations
 
 ### 1. Survival Distribution
-![Survival Distribution](CodeAlpha_DataAnalytics/CodeAlpha_EDA/images/01_survival_distribution.png)
+![Survival Distribution](/images/01_survival_distribution.png)
 
 ### 2. Age Distribution
-![Age Distribution](CodeAlpha_EDA/images/02_age_distribution.png)
+![Age Distribution](/images/02_age_distribution.png)
 
 ### 3. Fare Distribution
-![Fare Distribution](CodeAlpha_EDA/images/03_fare_distribution.png)
+![Fare Distribution](/images/03_fare_distribution.png)
 
 ### 4. Survival by Gender
-![Survival by Gender](CodeAlpha_EDA/images/04_survival_by_gender.png)
+![Survival by Gender](/images/04_survival_by_gender.png)
 
 ### 5. Survival by Passenger Class
-![Survival by Class](CodeAlpha_EDA/images/05_survival_by_class.png)
+![Survival by Class](/images/05_survival_by_class.png)
 
 ### 6. Correlation Analysis
-![Correlation Heatmap](CodeAlpha_EDA/images/06_correlation_heatmap.png)
+![Correlation Heatmap](/06_correlation_heatmap.png)
 
 ### 7. Age vs Survival
 ![Age vs Survival](CodeAlpha_EDA/images/07_age_vs_survival.png)
 
 ### 8. Fare vs Survival
-![Fare vs Survival](CodeAlpha_EDA/images/08_fare_vs_survival.png)
+![Fare vs Survival](/images/08_fare_vs_survival.png)
 
 ### 9. Gender Distribution
-![Gender Distribution](CodeAlpha_EDA/images/09_gender_distribution.png)
+![Gender Distribution](/images/09_gender_distribution.png)
 
 ### 10. Class Distribution
-![Class Distribution](CodeAlpha_EDA/images/10_class_distribution.png)
+![Class Distribution](/images/10_class_distribution.png)
 
 ## 🔍 Key Insights
 
@@ -175,4 +175,5 @@ titanic_eda_project/
 
 ---
 *Report generated automatically by Titanic EDA Analysis System*
+
 
