@@ -43,7 +43,7 @@
 ## 📈 Key Visualizations
 
 ### 1. Survival Distribution
-![Survival Distribution](images/01_survival_distribution.png)
+![Survival Distribution](CodeAlpha_EDA/images/01_survival_distribution.png)
 
 ### 2. Age Distribution
 ![Age Distribution](images/02_age_distribution.png)
@@ -175,3 +175,4 @@ titanic_eda_project/
 
 ---
 *Report generated automatically by Titanic EDA Analysis System*
+
